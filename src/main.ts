@@ -10,13 +10,10 @@ const ctx = canvas.getContext("2d")!;
 
 const cellSize = 20;
 const nCells = canvas.width / cellSize 
-console.log(nCells)
 
-// const seed = Array(nCells).fill(Array(nCells).fill(0))
 const seed = randomSeed(nCells)
 
 const game = new GameOfLife(seed);
-
 
 const drawCells = () => {
   game.state.forEach((row, i) => {
