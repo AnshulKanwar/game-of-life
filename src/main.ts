@@ -9,7 +9,7 @@ canvas.height = window.innerHeight;
 const ctx = canvas.getContext("2d")!;
 ctx.lineWidth = 0.2
 
-const cellSize = 5;
+const cellSize = 10;
 const nCells = canvas.width / cellSize 
 
 const seed = randomSeed(nCells)
